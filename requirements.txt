@@ -1,0 +1,5 @@
+Flask
+Flask-RESTful
+jsonschema
+MySQL-connector
+MySQL-connector-python
