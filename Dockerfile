@@ -14,7 +14,9 @@ WORKDIR ${APP_DIR}
 COPY requirements.txt .
 RUN pip3 install --upgrade pip && \
     pip3 install flask && \
-	pip3 install psycopg2-binary &&\
+    apk add --virtual build-deps gcc python3-dev musl-dev && \
+    apk add postgresql-dev && \
+    pip install psycopg2 && \
     pip3 install -r requirements.txt
 
 # expose http port
