@@ -18,7 +18,7 @@ def users():
 	
 	db_connection = psycopg2.connect(user="postgres",
 	password="postgres",
-	host="database-1.cyxbvexc7bkh.us-east-2.rds.amazonaws.com",
+	host="",
 	port="5432",
 	database="UID"
 	)
@@ -39,7 +39,7 @@ def add_user():
 	data = (_uid, _firstname, _lastname)
 	db_connection = psycopg2.connect(user="postgres",
 	password="postgres",
-	host="database-1.cyxbvexc7bkh.us-east-2.rds.amazonaws.com",
+	host="",
 	port="5432",
 	database="UID"
 	)
@@ -56,7 +56,7 @@ def validate_user():
 	_uid = _json['UID']
 	db_connection = psycopg2.connect(user="postgres",
 	password="postgres",
-	host="database-1.cyxbvexc7bkh.us-east-2.rds.amazonaws.com",
+	host="",
 	port="5432",
 	database="UID"
 	)
